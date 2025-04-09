@@ -6,3 +6,8 @@ My first hackathon project.
 
 ## Projemin Çözümü:
 >  Günde kaç litre su harcandığını girilen ya da anlaşılan markalar ile otamatik olarak alarak daha ekonomik su tüketimi yapmak için öneriler veren bir site.
+
+## Kullanılacak Kütüphaneler
+- Flask
+- numpy
+- Ntl
