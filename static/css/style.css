@@ -1,0 +1,132 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&family=Winky+Rough:ital,wght@0,300..900;1,300..900&display=swap');
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-image: url(https://i20.haber7.net/resize/1280x720//haber/haber7/photos/2020/49/barajlarda_su_tukeniyor_iste_su_israfi_onleminin_8_yolu_1607167835_3724.jpeg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+}
+
+header {
+    text-align: left;
+    padding-top: 20%;
+}
+
+.MainMenu {
+    color: rgb(0, 138, 252);
+    text-align: left;
+    padding-left: 10%;
+    font-size: 200%;
+    font-family: 'Winky Rough', sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.MainMenu a {
+    color: rgb(20, 113, 189);
+    text-decoration: none;
+}
+
+.MainMenu a:hover {
+    color: rgb(0, 138, 252);
+    text-decoration: underline;
+}
+
+.create-form {
+    width: 100%;
+    max-width: 600px;
+    padding: 20px;
+    margin-top: 15%;
+    margin-left: 100px;
+    background-color: rgba(255, 255, 255, 0.8);
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.create-form input {
+    width: 80%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #2197db;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+.create-form input[type="submit"] {
+    background-color: #2197db;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+.create-form input[type="submit"]:hover {
+    background-color: #1a7bb8;
+}
+
+.result-container {
+    width: 100%;
+    max-width: 700px;
+    padding: 20px;
+    margin-top: 6%;
+    margin-left: 100px;
+    background-color: rgba(255, 255, 255, 0.8);
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.result-container img {
+    width: 100%;
+    height: auto;
+    border-radius: 30px;
+}
+
+.chat-container {
+    width: 100%;
+    max-width: 700px;
+    padding: 20px;
+    margin-top: 6%;
+    margin-left: 100px;
+    background-color: rgba(255, 255, 255, 0.8);
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.chat-container input {
+    width: 80%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #2197db;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+.chat-container input[type="submit"] {
+    background-color: #2197db;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+.chat-container input[type="submit"]:hover {
+    background-color: #1a7bb8;
+}
+
+.form-container input {
+    width: 80%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #2197db;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+.form-container input[type="submit"] {
+    background-color: #2197db;
+    color: white;
+    border: none;
+    cursor: pointer;
+}

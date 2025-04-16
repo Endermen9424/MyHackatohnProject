@@ -10,4 +10,4 @@ My first hackathon project.
 ## Kullanılacak Kütüphaneler
 - Flask
 - numpy
-- Ntlk
+- matplotlib

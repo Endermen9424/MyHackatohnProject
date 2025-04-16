@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../static/css/style.css">
+    <title>Suyunu Hesapla</title>
+</head>
+<body>
+    <form action="{{ url_for('forForm') }}" method="post" class="create-form">
+        <div class="form-container">
+            <h1>Su Tasarrufu Hesaplama Formu</h1>
+
+            <label for="water_usage">Ailedeki bir kişinin günlük su kullanımı (litre):</label>
+            <input type="number" id="water_usage" name="water_usage" required><br><br>
+
+            <label for="family_members">Ailedeki kişi sayısı:</label>
+            <input type="number" id="family_members" name="family_members" required><br><br>
+
+            <label for="days">Kaç gün boyunca su tasarrufu yapmayı planlıyorsunuz:</label>
+            <input type="number" id="days" name="days" required><br><br>
+
+            <input type="submit" value="Hesapla">
+        </div>
+    </form>
+</body>
+</html>
