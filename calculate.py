@@ -6,9 +6,9 @@ average = 200
 def calculates(todaylyWater: int = "0", PersonCount: int = "1", DaysCount: int = "1"):
     CalculateAverage = average * PersonCount * DaysCount
     FamilyWater = todaylyWater * PersonCount * DaysCount
-    if FamilyWater > CalculateAverage + 50:
+    if FamilyWater > CalculateAverage + 50 * PersonCount * DaysCount:
         return "Çok fazla su harcıyorsunuz!"
-    elif FamilyWater < CalculateAverage -50:
+    elif FamilyWater < CalculateAverage - 50 * PersonCount * DaysCount:
         return "Su harcamanız Çok iyi."
     else:
         return "Su harcamanız normal."
@@ -58,16 +58,25 @@ def get_suggestions(user_input):
     
     if 'su' in filtered_words:
         suggestions.append("Su tasarrufu sağlamak için duş sürenizi kısaltmayı deneyin.")
-    if 'kullan' in filtered_words or 'harca' in filtered_words:
+    if 'kullan' in filtered_words or 'harca' in filtered_words or 'kullanımı' in filtered_words or 'kullanımımı' in filtered_words:
         suggestions.append("Su tasarrufu yapmak için muslukları kullanmadığınızda kapalı tutun.")
     if 'bahçe' in filtered_words:
         suggestions.append("Bahçenizi sularken suyunuzu israf etmeyin, sabah saatlerini tercih edin.")
     if 'çamaşır' in filtered_words:
         suggestions.append("Çamaşır makinelerini yalnızca tam dolu olduğunda çalıştırın.")
+    if 'bulaşık' in filtered_words:
+        suggestions.append("Bulaşık makinesini tam dolmadan çalıştırmayın.")
+    if 'tuvalet' in filtered_words:
+        suggestions.append("Tuvaletlerde su tasarrufu için çift tuşlama sistemini kullanın.")
+    if 'duş' in filtered_words:
+        suggestions.append("Duş alırken suyunuzu kapatmayı unutmayın.")
+    if 'musluk' in filtered_words:
+        suggestions.append("Muslukları açık bırakmaktan kaçının.")
+    if 'su tasarrufu' in filtered_words:
+        suggestions.append("Su tasarrufu için bilinçli kullanım çok önemlidir.")
+    if 'damla' in filtered_words:
+        suggestions.append("Her damla su değerlidir, bu yüzden su tasarrufuna dikkat edin.")
     
-    # En sık kelimelere göre genel öneri
-    if most_common_words:
-        suggestions.append(f"En sık kullanılan kelimeler: {', '.join([word for word, _ in most_common_words])}")
     
     # Eğer su tasarrufu ile ilgili herhangi bir öneri bulunamadıysa, genel bir öneri
     if not suggestions:

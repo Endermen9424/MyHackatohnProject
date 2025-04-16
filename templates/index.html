@@ -8,8 +8,11 @@
 </head>
 <body>
     {% block content %}
-    <header class="MainMenu">Hoşgeldin {{user}}</header>
-    <p class="MainMenu">Su israfını azaltmak ister misin? <a href="/calculate"> Hesapla </a></p>
+    <div class="MainMenu">
+        <header >Hoşgeldin {{user}}</header>
+        <p >Su israfını azaltmak ister misin? <a href="/calculate"> Hesapla </a></p>
+    </div>
+    
     {% endblock %}
 </body>
 </html>
